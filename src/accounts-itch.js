@@ -1,8 +1,8 @@
-Accounts.oauth.registerService('itch');
+Accounts.oauth.registerService("itch");
 
 if (Meteor.isClient) {
   Meteor.loginWithItch = function(options, callback) {
-    if (!callback && typeof options === 'function') {
+    if (!callback && typeof options === "function") {
       callback = options;
       options = null;
     }
@@ -14,7 +14,7 @@ if (Meteor.isClient) {
   };
 } else {
   Accounts.addAutopublishFields({
-    forLoggedInUser: ['services.itch'],
-    forOtherUsers: ['services.itch.profile'],
+    forLoggedInUser: ["services.itch"],
+    forOtherUsers: ["services.itch.profile"],
   });
 }
