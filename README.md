@@ -2,7 +2,7 @@
 
 ## ABOUT
 
-A login service for Itch. 
+A login service for Itch.
 
 ## AUTHORS
 
